@@ -11,4 +11,3 @@ function doContactClick() {
 	var listContactView = Alloy.createController("listContact", {}).getView();
 	Alloy.Globals.navgroup.openWindow(listContactView);
 }
-
