@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container">
+		<View layout='vertical'>
+			<ImageView id="userPic"/>
+			<Label id="titleLabel"></Label>
+			<Button id="conversation" onClick="conversation">대화하기</Button>
+		</View>
+	</Window>
+</Alloy>

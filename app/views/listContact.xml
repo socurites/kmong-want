@@ -1,0 +1,20 @@
+<Alloy>
+	<Window class="container">
+		<ListView id="list" defaultItemTemplate="template2" onItemclick="showChat">
+			<Templates>
+				<ItemTemplate name="buttonItem" height="Ti.UI.SIZE">
+					<Button id="loadMoreBtn">Load More</Button>
+				</ItemTemplate>
+				<ItemTemplate  id="template2" name="template2"  class="template2">
+					<ImageView bindId="userPic" class="userPicThumb"/>
+					<View id="">
+						<Label bindId="usernameLabel" class="title"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="listContactSection">
+				<ListItem template="template2"/>
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>

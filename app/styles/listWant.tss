@@ -1,0 +1,20 @@
+".container": {
+	backgroundColor: 'white'
+}
+
+".userPicThumb": {
+	width: '50dp',
+	height: '50dp',
+	left: 0
+}
+
+".title": {
+	color: '#000',
+	left: '60dp',
+	top: 0,
+	textAlign: 'left'
+}
+
+".template1": {
+	height: '56dp'
+}

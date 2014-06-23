@@ -1,0 +1,8 @@
+<Alloy>
+	<NavigationWindow id="navGroupWin">
+		<Window class="container" layout="vertical">
+			<Label onClick="doWantClick">도와주세요</Label>
+			<Label onClick="doContactClick">대화하기</Label>
+		</Window>
+	</NavigationWindow>
+</Alloy>
