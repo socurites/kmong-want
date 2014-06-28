@@ -15,27 +15,27 @@ function Controller() {
         id: "wantDetail"
     });
     $.__views.wantDetail && $.addTopLevelView($.__views.wantDetail);
-    $.__views.__alloyId37 = Ti.UI.createView({
+    $.__views.__alloyId39 = Ti.UI.createView({
         layout: "vertical",
-        id: "__alloyId37"
+        id: "__alloyId39"
     });
-    $.__views.wantDetail.add($.__views.__alloyId37);
+    $.__views.wantDetail.add($.__views.__alloyId39);
     $.__views.userPic = Ti.UI.createImageView({
         id: "userPic"
     });
-    $.__views.__alloyId37.add($.__views.userPic);
+    $.__views.__alloyId39.add($.__views.userPic);
     $.__views.titleLabel = Ti.UI.createLabel({
         width: Ti.UI.SIZE,
         height: Ti.UI.SIZE,
         color: "#000",
         id: "titleLabel"
     });
-    $.__views.__alloyId37.add($.__views.titleLabel);
+    $.__views.__alloyId39.add($.__views.titleLabel);
     $.__views.conversation = Ti.UI.createButton({
         title: "대화하기",
         id: "conversation"
     });
-    $.__views.__alloyId37.add($.__views.conversation);
+    $.__views.__alloyId39.add($.__views.conversation);
     conversation ? $.__views.conversation.addEventListener("click", conversation) : __defers["$.__views.conversation!click!conversation"] = true;
     exports.destroy = function() {};
     _.extend($, $.__views);

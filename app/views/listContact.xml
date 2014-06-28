@@ -7,8 +7,9 @@
 				</ItemTemplate>
 				<ItemTemplate  id="template2" name="template2"  class="template2">
 					<ImageView bindId="userPic" class="userPicThumb"/>
-					<View id="">
+					<View id="" layout='vertical'>
 						<Label bindId="usernameLabel" class="title"/>
+						<Label bindId="messageLabel" class="message"/>
 					</View>
 				</ItemTemplate>
 			</Templates>

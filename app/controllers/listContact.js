@@ -3,11 +3,13 @@ var args = arguments[0] || {};
 var _data = [];
 _data.push({
 	userPic : 'http://kmong.com/images/membersprofilepic/thumbs/kEQFX1391379930.png',
-	username : 'kmong'
+	username : 'kmong',
+	message : '안녕하세요 지난번에 문의드린 그 내용에 대해 물어보고 싶은....'
 });
 _data.push({
 	userPic : 'http://kmong.com/images/membersprofilepic/21oFI1375236798.jpg',
-	username : 'jamak'
+	username : 'jamak',
+	message : '안녕하세요 지난번에 문의드린 그 내용에 대해 물어보고 싶은....'
 });
 
 
@@ -38,6 +40,9 @@ function createListView(_data) {
 			},
 			usernameLabel : {
 				text : _data[i].username // assign the values from the data
+			},
+			messageLabel : {
+				text : _data[i].message // assign the values from the data
 			}
 		});
 	}

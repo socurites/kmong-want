@@ -35,25 +35,25 @@ function Controller() {
         id: "listWant"
     });
     $.__views.listWant && $.addTopLevelView($.__views.listWant);
-    var __alloyId21 = {};
-    var __alloyId24 = [];
-    var __alloyId25 = {
+    var __alloyId23 = {};
+    var __alloyId26 = [];
+    var __alloyId27 = {
         type: "Ti.UI.Button",
         properties: {
             title: "Load More"
         }
     };
-    __alloyId24.push(__alloyId25);
-    var __alloyId23 = {
+    __alloyId26.push(__alloyId27);
+    var __alloyId25 = {
         properties: {
             name: "buttonItem",
             height: Ti.UI.SIZE
         },
-        childTemplates: __alloyId24
+        childTemplates: __alloyId26
     };
-    __alloyId21["buttonItem"] = __alloyId23;
-    var __alloyId27 = [];
-    var __alloyId28 = {
+    __alloyId23["buttonItem"] = __alloyId25;
+    var __alloyId29 = [];
+    var __alloyId30 = {
         type: "Ti.UI.ImageView",
         bindId: "userPic",
         properties: {
@@ -63,12 +63,12 @@ function Controller() {
             bindId: "userPic"
         }
     };
-    __alloyId27.push(__alloyId28);
-    var __alloyId30 = {
+    __alloyId29.push(__alloyId30);
+    var __alloyId32 = {
         type: "Ti.UI.View",
         childTemplates: function() {
-            var __alloyId31 = [];
-            var __alloyId32 = {
+            var __alloyId33 = [];
+            var __alloyId34 = {
                 type: "Ti.UI.Label",
                 bindId: "titleLabel",
                 properties: {
@@ -79,37 +79,37 @@ function Controller() {
                     bindId: "titleLabel"
                 }
             };
-            __alloyId31.push(__alloyId32);
-            return __alloyId31;
+            __alloyId33.push(__alloyId34);
+            return __alloyId33;
         }(),
         properties: {}
     };
-    __alloyId27.push(__alloyId30);
-    var __alloyId26 = {
+    __alloyId29.push(__alloyId32);
+    var __alloyId28 = {
         properties: {
             height: "56dp",
             name: "template1"
         },
-        childTemplates: __alloyId27
+        childTemplates: __alloyId29
     };
-    __alloyId21["template1"] = __alloyId26;
-    var __alloyId34 = [];
-    $.__views.__alloyId35 = {
+    __alloyId23["template1"] = __alloyId28;
+    var __alloyId36 = [];
+    $.__views.__alloyId37 = {
         template: "template1",
         properties: {
-            id: "__alloyId35"
+            id: "__alloyId37"
         }
     };
-    __alloyId34.push($.__views.__alloyId35);
+    __alloyId36.push($.__views.__alloyId37);
     $.__views.section = Ti.UI.createListSection({
         id: "section"
     });
-    $.__views.section.items = __alloyId34;
-    var __alloyId36 = [];
-    __alloyId36.push($.__views.section);
+    $.__views.section.items = __alloyId36;
+    var __alloyId38 = [];
+    __alloyId38.push($.__views.section);
     $.__views.list = Ti.UI.createListView({
-        sections: __alloyId36,
-        templates: __alloyId21,
+        sections: __alloyId38,
+        templates: __alloyId23,
         id: "list",
         defaultItemTemplate: "template1"
     });
