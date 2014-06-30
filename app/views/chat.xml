@@ -1,0 +1,19 @@
+<Alloy>
+	<Window class="container">
+		<ListView id="list" defaultItemTemplate="template3">
+			<Templates>
+				<ItemTemplate name="buttonItem" height="Ti.UI.SIZE">
+					<Button id="loadMoreBtn">Load More</Button>
+				</ItemTemplate>
+				<ItemTemplate  id="template3" name="template3"  class="template3">
+					<View id="" layout='vertical' class="message-box">
+						<Label bindId="messageLabel" class="message"/>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection id="listChatSection">
+				<ListItem template="template3"/>
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>

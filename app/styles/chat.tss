@@ -1,0 +1,27 @@
+".container": {
+	backgroundColor: 'white'
+}
+
+".message-box": {
+	
+}
+
+".message": {
+	color: '#C2C4C4',
+	left: '15dp',
+	right: '15dp',
+	top: 10,
+	textAlign: 'left',
+	font: {fontSize: 12},
+	backgroundImage: '/bubble.png',
+	backgroundLeftCap: 43,
+    backgroundRightCap: 34,
+    backgroundTopCap: 34,
+    backgroundBottomCap: 36,
+    height: 'auto',
+    width: 'auto'
+}
+
+".template3": {
+	height: '56dp'
+}

@@ -13,39 +13,13 @@ _data.push({
 });
 
 
-Ti.API.info("===listContact.js");
-
-function showChat(e) {
-	var section = $.list.sections[e.sectionIndex];
-	var item = section.getItemAt(e.itemIndex);
-
-	var args = {
-		username : item.usernameLabel.text
-	};
-	
-	Ti.API.info("===showChat.js");
-
-	var chatView = Alloy.createController("chat", args).getView();
-	
-	Ti.API.info("===showChat.js -- openWindow");
-	
-	Alloy.Globals.navgroup.openWindow(chatView);
-}
-
-
 function createListView(_data) {
 	var items = [];
 	for (var i in _data) {
 
 		// add items to an array
 		items.push({
-			template : "template2", // set the template
-			userPic : {
-				image : _data[i].userPic // assign the values from the data
-			},
-			usernameLabel : {
-				text : _data[i].username // assign the values from the data
-			},
+			template : "template3", // set the template
 			messageLabel : {
 				text : _data[i].message // assign the values from the data
 			}
@@ -54,7 +28,7 @@ function createListView(_data) {
 	
 	Ti.API.info("===createListView.js");
 
-	$.listContactSection.setItems(items);
+	$.listChatSection.setItems(items);
 
 }
 
